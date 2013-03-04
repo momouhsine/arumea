@@ -1,0 +1,20 @@
+OussBlogBundle_homepage:
+    pattern: /hello/{name}
+    defaults: { _controller: OussBlogBundle:Default:index }
+
+accueil:
+    pattern:      /blog
+    defaults:  { _controller: OussBlogBundle:Blog:index }
+     
+voir:
+    pattern:      /blog/article/{id}
+    defaults:  { _controller: OussBlogBundle:Blog:voir }
+     
+ajouter:
+    pattern:      /blog/ajouter
+    defaults:  { _controller: OussBlogBundle:Blog:ajouter }
+
+voir_slug:
+    pattern:     /blog/{annee}/{slug}.{format}
+    defaults: { _controller: OussBlogBundle:Blog:voirSlug }
+
